@@ -9,13 +9,117 @@
     <link href="normalizer.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body class="body">
 
-    <form class="form">
+    <form action="http://dev.cotenfrontend.pl" method="POST" class="form">
         <p>
-            <label for="name">Podaj swoje imię</label>
-            <input name="name">
+            <label for="name">Podaj swoje imię</label><br>
+            <input name="name" id="name" type="text" placeholder="Podaj swoje imię">
         </p>
+
+        <p>
+            <label for="surName">Podaj swoje nazwisko</label><br>
+            <input name="surName" id="surName" type="text" placeholder="Podaj swoje nazwisko">
+        </p>
+
+        <p>
+            <label for="phone">Podaj swoje nazwisko</label><br>
+            <input name="phone" id="phone" type="tel" placeholder="Wpisz swoj nr telefonu">
+        </p>
+
+        <p>
+            <label for="age">Podaj swoj wiek</label><br>
+            <input type="number" name="age" id="age">
+        </p>
+
+        <br>
+        <br><br>
+        <br>
+        <p>
+            <label for="password">Podaj swoje hasło</label><br>
+            <input required name="password" id="password" type="password" placeholder="Wpisz swoje hasło">
+        </p>
+
+        <p>
+            <label for="">Podaj swoj adres email</label><br>
+            <input required name="email" id="email" type="email" placeholder="Wpisz swoj adres email">
+        </p>
+        <br>
+        <br><br>
+        <br>
+        <fieldset>
+            <legend> Jak oceniasz tę stronę?</legend>
+            <p>
+                <input type="radio" checked value="Domyślna wartość" name="radio" id="radio1">
+                <label for="radio1">Oceniam strone na 10</label>
+            </p>
+
+            <p>
+                <input type="radio" name="radio" id="radio2">
+                <label for="radio2">Oceniam strone na 9</label>
+            </p>
+
+            <p>
+                <input type="radio" name="radio" id="radio3">
+                <label for="radio3">Oceniam strone na 8</label>
+            </p>
+
+            <br>
+            <br>
+
+            <p>
+                <input type="radio" name="radio2" id="radio4">
+                <label for="radio4">Oceniam strone na 3</label>
+            </p>
+
+            <p>
+                <input type="radio" name="radio2" id="radio5">
+                <label for="radio5">Oceniam strone na 2</label>
+            </p>
+
+            <p>
+                <input type="radio" name="radio2" id="radio6">
+                <label for="radio6">Oceniam strone na 1</label>
+            </p>
+            <br>
+            <br><br>
+            <br>
+            <p>
+                <input type="checkbox" value="Zgoda zaakceptowana" name="zgoda" id="zgoda">
+                <label for="zgoda">Czy wyrażasz zgode bla bla</label>
+            </p>
+
+            <p>
+                <input type="checkbox" value="Regulamin zaakceptowany" name="regulamin" id="regulamin">
+                <label for="regulamin">Akceptuje regulamin ....</label>
+            </p>
+            <br>
+            <br>
+
+            <p>
+                <label for="range">Podaj w procentach satysfakcje z uzyskanej pomocy</label>
+                <input type="range" min="0" max="100" step="1" name="range" id="range">
+
+            </p>
+            <br>
+            <br>
+            <p>
+                <label for="select">Podaj kraj pochodzenia</label>
+                <select name="select" id="select">
+                    <option></option>
+                    <option value="Uzytkownik wybrał Polska">Polska</option>
+                    <option value="Uzytkownik wybrał Rosja">Rosja</option>
+                    <option value="Uzytkownik wybrał Francja">Francja</option>
+                </select>
+            </p>
+
+        </fieldset>
+        <label for="notatnik">Opisz swój problem</label><br>
+        <textarea name="notatnik" id="notatnik"></textarea>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value=" Wyślij formularz">
 
     </form>
 
